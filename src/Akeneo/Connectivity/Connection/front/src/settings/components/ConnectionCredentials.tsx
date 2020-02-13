@@ -147,7 +147,10 @@ const OneWrongCombinationWarning = ({
                         </span>`,
                             date: formatDate(lastLogin.date, {month: 'short', day: 'numeric'}),
                             time: formatDate(lastLogin.date, {hour: '2-digit', minute: '2-digit', second: '2-digit'}),
-                            good_username: `<span class='AknConnectivityConnection-helper--highlight'>${goodUsername}</span>`,
+                            good_username: `
+                        <span class='AknConnectivityConnection-helper--highlight'>
+                            ${goodUsername}
+                        </span>`,
                         }
                     ),
                 }}
@@ -187,7 +190,10 @@ const SeveralWrongCombinationsWarning = ({
                     __html: translate(
                         'akeneo_connectivity.connection.edit_connection.credentials.wrong_credentials_combinations.several',
                         {
-                            good_username: `<span class='AknConnectivityConnection-helper--highlight'>${goodUsername}</span>`,
+                            good_username: `
+                        <span class='AknConnectivityConnection-helper--highlight'>
+                            ${goodUsername}
+                        </span>`,
                         }
                     ),
                 }}
